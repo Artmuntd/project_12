@@ -1,0 +1,17 @@
+{
+  "name": "project12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "app.js"
+  },
+  "author": "artem",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0"
+  },
+  "dependencies": {},
+  "description": ""
+}
