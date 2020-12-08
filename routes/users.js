@@ -12,7 +12,7 @@ router.get('/:id', (req, res) => {
     return;
   }
 
-  res.status(404).json({ message: 'Такого пользователя не существует' });
+  res.status(404).json({ message: 'Нет пользователя с таким id' });
 });
 
 module.exports = router;
