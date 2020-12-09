@@ -6,6 +6,7 @@ const { PORT = 3000 } = process.env;
 const app = express();
 
 app.use(express.static('./public'));
+
 app.use('/users', userRouter);
 app.use('/cards', cardsUserRouter);
 

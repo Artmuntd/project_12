@@ -1,8 +1,17 @@
 const router = require('express').Router();
-const cards = require('../data/card.json');
+const fs = require('fs');
 
 router.get('/', (req, res) => {
-  res.send(cards);
+
+  fs.readFile('./data/card.json', (err, data) => {
+
+    if (err) {
+      return res.status(500).json({ message: 'Файл не прочитан' });;
+    }
+
+    res.send(data.toString());
+  })
+
 });
 
 module.exports = router;
